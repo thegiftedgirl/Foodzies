@@ -3,5 +3,6 @@ module.exports = {
 }
 
 function index(req,res) {
-    res.render('index');
+    console.log(req.user)
+    res.render('index', {user:req.user});
 }

@@ -9,7 +9,7 @@
   <html>
   
   <head>
-    <title>SEIR-Flex Student Fun Facts</title>
+    
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
     <!-- Materialize Icons -->
@@ -25,19 +25,27 @@
     <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper orange">
-          <a href="" class="brand-logo left">FOODZIES</a>
-          <ul class="right">
+          <a href="" class="brand-logo center">FOODZIES</a>
+          
+          <ul class="left">
             <li><a href="/">Home</a></li>
+            <% if (user) {%>
+            <li><a href="/rooms/">Recipe Room</a></li> 
+          
+            <li><a href="/rooms/new">Add New Recipe</a></li> 
+            <% } %>
             <!-- Place Login UI Here -->
       
    
                 
                       <li>
-                      <% if ('foodie') { %>
+                     <% if (user){ %>
                           <a href="/logout"><i class="material-icons left">trending_flat</i>Log Out</a>
-                      <% } else { %>
+                          <h2>YEP</h2>
+                          <% } else {%>
                           <a href="/auth/google"><i class="material-icons left">vpn_key</i>Login with Google</a>
-                      <% } %>
+                          <h2>NOPE</h2>
+                         <% } %>
                       </li>    
 
 

@@ -5,6 +5,12 @@ const Schema = mongoose.Schema;
 
 
 
+const commentSchema = new Schema({
+    content: String,
+}, {
+    timestamps: true
+});
+
 
 const roomSchema = new Schema({
     title: String,
@@ -12,9 +18,7 @@ const roomSchema = new Schema({
         type: String,
         default: 'https://www.bing.com/th?id=OIP.ISK0kbvLUbQTc9hltD47fAHaF0&pid=Api&rs=1'
     },
-    recipes: [
-    {type: Schema.Types.ObjectId, ref: "Recipe"}
-    ],
+    comments: [commentSchema],
 }, {
     timestamps: true
 });

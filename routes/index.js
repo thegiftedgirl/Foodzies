@@ -8,7 +8,7 @@ router.get('/', indexCtrl.index);
 
 router.get('/', function(req, res){
     res.render('index', {
-        user:req.user
+        user: req.user
     });
 });
 
@@ -19,7 +19,7 @@ router.get('/auth/google', passport.authenticate(
 router.get('/oauth2callback', passport.authenticate(
     'google',
     {
-        successRedirect : '/foodies',
+        successRedirect : '/',
         failureRedirect : '/'
     }
 ));

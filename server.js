@@ -7,6 +7,7 @@ const indexRouter = require('./routes/index');
 const roomsRouter = require('./routes/rooms');
 const recipesRouter = require('./routes/recipes');
 const commentsRouter = require('./routes/comments');
+const methodOverride = require('method-override');
 
 const app = express();
 require('dotenv').config();
@@ -17,6 +18,9 @@ require('./config/passport');
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 //configure and mount middleware for oauth//
+app.use(methodOverride("_method"));
+app.use(express.json());
+
 app.use(express.urlencoded({extended: true}));
 
 app.use(session({

@@ -6,9 +6,15 @@ module.exports = {
     new: newRoom,
     create, 
     index,
-    show
+    show, 
+    delete: delRecipe
 }
 
+function delRecipe(req, res) {
+    Room.findByIdAndDelete(req.params.id, function(err, room){
+        res.redirect('/rooms')
+    });
+}
 function show(req, res) {
     Room.findById(req.params.id, function(err, room) {
         res.render('rooms/show', {

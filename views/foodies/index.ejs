@@ -3,10 +3,12 @@
     <li><a href="/">Home</a></li>
     <!-- new html below -->
     <li>
-    <% if ('foodie') { %>
+    <% if (user) { %>
         <a href="/logout"><i class="material-icons left">trending_flat</i>Log Out</a>
+        <h2>YASS</h2>
     <% } else { %>
         <a href="/auth/google"><i class="material-icons left">vpn_key</i>Login with Google</a>
+        <h2>UHUH</h2>
     <% } %>
     </li>
 </ul>
