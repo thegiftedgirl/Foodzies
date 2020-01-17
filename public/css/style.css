@@ -1,5 +1,13 @@
-*{
-    background: #f59d1a
-    
+*{ 
+   
+background: #f59d1a;
+   
+   
+
+  background-image: url('https://images.squarespace-cdn.com/content/v1/537f850de4b0abc663a60810/1523408023816-VEZXYIMYQVECSPFBXQ9Q/ke17ZwdGBToddI8pDm48kIytc2WTkzxvvYXYDlQZ9R17gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1USk4GCMsEKK7CiRgqqFg5STsm-rn8GsW5BJATp59SKW4cvWGtaRzboHuOEoEkPd93Q/Time_120617_Chapter_5_20_Popcorn_0456.jpg?format=500w');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
+
 
