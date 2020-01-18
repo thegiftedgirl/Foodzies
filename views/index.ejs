@@ -9,39 +9,38 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
   <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-          
+
  
   
 </head> 
 <body>
   <nav>
   
+     
+     
     <ul class="">
-      <li><a href="/">Home</a></li>
+      <ul><a href="/">Home</a></ul>
       <% if (user) {%>
-      <li><a href="/rooms/">Recipe Room</a></li> 
+      <ul><a href="/rooms/">Recipe Room</a></ul> 
     
-      <li><a href="/rooms/new">Add New Recipe</a></li> 
+      <ul><a href="/rooms/new">Add New Recipe</a></ul> 
       <% } %>
       <!-- Place Login UI Here -->
-<li>
+<ul>
 <% if (user){ %>
    <a href="/logout"><i class="material-icons left"></i>Log Out</a>
-   <h2>Hey Foodie !</h2>    
+   <h2>Hey Foodie, get your Yum on!</h2>    
       <% } else {%>
       <a href="/auth/google"><i class="material-icons left"></i>Login with Google</a>
    
   <% } %>
-           </li>    
+           </ul>    
 
 </nav>
   <main>
     
-    <h1 >Foodzies</h1>
+    <h1>Foodzies</h1>
     <h3>Where foodies make friends</h3>
 
 

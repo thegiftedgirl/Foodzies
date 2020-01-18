@@ -13,7 +13,7 @@ background-size: cover;
 
 nav{
   background-color: rgba(122, 79, 125, 0.701);
-  overflow:hidden;
+
 
    
    
@@ -26,47 +26,56 @@ main{
 
     width:400px, cover;
     border: 15px solid pink;
-    padding: 100px;
-    margin: 80px;
+    padding: 150px;
+    margin: 100px;
     background: radial-gradient(thistle, lavender);
-  
-    font-size: 33px;
+    
+    font-size: 20px;
     opacity: 0.7;
 }
 
 ul{
     display: flex;
     flex-direction: row; /* default */
-    justify-content: flex-start; /* default */
-    height: 50px;
    
+    height: 30px;
+    text-align: center;  
+    font-size: 10px;
+ 
    
 
 }
-a{
-    fomt-color: pink;
-    font-size: 50px;
-    padding: 40px;
-    margin-right: 30px;
-    font-family: 'Fredoka One', cursive;
-   
+a {
+    color: rgb(8, 7, 8);
+    font-size: 20px;  
+    font-family: 'Fredoka One', cursive;   
+    padding: 20px;
+    background-color: thistle;
+    display: inline-block;
+    padding: 14px 25px;
 }
+
+  
+  
+ 
 
 
 h2 {
     font-family: 'Fredoka One', cursive;
-    font-size: 50px;
+    font-size: 25px;
+    color: rgba(28, 7, 14, 0.714);
 }
 h3{
     background:none;
     font-family: 'Fredoka One', cursive;
+    text-align: center;  
 }
 
 h1{
     background: none;
     font-family: 'Fredoka One', cursive;
-   
-    font-size: 50px;
+    text-align: center;  
+    font-size: 70px;
 }
 p{
     background: none;

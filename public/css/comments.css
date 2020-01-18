@@ -1,6 +1,10 @@
 *{
     background: #dea8c9;
-   
+    background-color: pink;
+    background-image: url('https://i.imgur.com/81zXMg5.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover; 
     
 }
 
@@ -8,3 +12,40 @@
     background-color: rgb(255, 203, 71);
 }
 
+a {
+    color: rgb(8, 7, 8);
+    font-size: 20px;  
+    font-family: 'Fredoka One', cursive;   
+    padding: 20px;
+    background-color: thistle;
+    display: inline-block;
+    padding: 14px 25px;
+}
+ul{
+    display: flex;
+    flex-direction: column; /* default */
+   
+    height: 30px;
+    text-align: center;  
+    font-size: 10px;
+}
+
+
+h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 25px;
+    color: rgba(28, 7, 14, 0.714);
+}
+
+h1{
+    font-family: 'Fredoka One', cursive;
+    font-size: 25px;
+    color: rgba(28, 7, 14, 0.714);
+    text-align: justify;
+}
+
+p{
+    font-family: 'Just Me Again Down Here', cursive;
+    font-size: 20px;
+    color: rgba(28, 7, 14, 0.714);
+}

@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="/css/comments.css">
-  <div class="nav-wrapper">
-    <a href="#" class="brand-logo right">Foodzies</a>
-    <ul id="nav-mobile" class="left hide-on-med-and-down">
+
+    <h2>Foodzies</h2>
+    <link href="https://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here|Fredoka+One&display=swap" rel="stylesheet">
 
 
-  <li><a href="/">Home</a></li>
+  <ul><a href="/">Home</a></ul>
 
-      <li><a href="/rooms/">Recipe Room</a></li> 
+      <ul><a href="/rooms/">Recipe Room</a></ul> 
     
 </section>
 <main>
@@ -21,7 +21,10 @@
   <p><%= room.recipe %></p>
   <img src="<%= room.photoURL %>" alt="<%= room.title %>">
 </main>
+
+
 <h2>Comments</h2>
+
 <% room.comments.forEach(function(comment){ %>
 <p><%= comment.content %></p>
 <% }) %>

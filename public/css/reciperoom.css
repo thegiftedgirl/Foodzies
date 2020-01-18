@@ -32,3 +32,31 @@ a{
     background:none;
     font-display: block;
 }
+
+a {
+    color: rgb(8, 7, 8);
+    font-size: 20px;  
+    font-family: 'Fredoka One', cursive;   
+    padding: 20px;  
+    display: inline-block;
+    padding: 14px 25px;
+}
+
+h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 25px;
+    color: rgba(28, 7, 14, 0.714);
+}
+
+
+h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 33px;
+    color: rgba(28, 7, 14, 0.714);
+    text-align: center;
+}
+
+input{
+    background: none;
+    
+}
