@@ -1,0 +1,57 @@
+* {
+     background-color: pink;
+background-image: url('https://i.imgur.com/hjom0an.jpg');
+background-repeat: repeat;
+background-attachment: fixed;
+background-size: cover; 
+
+
+}
+
+div {
+    width:400px;
+    border: 15px solid pink;
+    padding: 100px;
+    margin: 80px;
+    background: radial-gradient(thistle, lavender);
+    flex-wrap: wrap;
+    font-size: 25px;
+    opacity: 0.7;
+}
+
+h2{
+    background: none;
+}
+  
+form{
+    background: none;
+}
+    
+ p {
+     background: none;
+ }  
+ label {
+     background: none;
+ }
+input{
+    background: rgb(237, 228, 236) repeat-y fixed;
+    opacity: 8;
+    width: 300px;
+    height: 50px;
+    font-size: 20;
+}  
+
+
+#input.recipe{
+    width: 300px;
+    height: 300px;
+    
+ 
+}
+
+button{
+    background: rgb(237, 228, 236) repeat-y fixed;
+    opacity: 8;
+ 
+    font-size:
+}

@@ -1,39 +1,76 @@
 *{ 
    
-background: #f59d1a;
-   
-  
+background: #ee9feb;
 background-image: url('https://images.squarespace-cdn.com/content/v1/537f850de4b0abc663a60810/1523408023816-VEZXYIMYQVECSPFBXQ9Q/ke17ZwdGBToddI8pDm48kIytc2WTkzxvvYXYDlQZ9R17gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1USk4GCMsEKK7CiRgqqFg5STsm-rn8GsW5BJATp59SKW4cvWGtaRzboHuOEoEkPd93Q/Time_120617_Chapter_5_20_Popcorn_0456.jpg?format=500w');
 background-repeat: repeat;
 background-attachment: fixed;
 background-size: cover; 
-border-sizing: border-box;
 
+
+
+}
+
+
+nav{
+  background-color: rgba(122, 79, 125, 0.701);
+  overflow:hidden;
+
+   
+   
 }
 
 
 
 
-nav > div:last-child {
-    margin-left: auto;
+main{
 
+    width:400px, cover;
+    border: 15px solid pink;
+    padding: 100px;
+    margin: 80px;
+    background: radial-gradient(thistle, lavender);
+  
+    font-size: 33px;
+    opacity: 0.7;
 }
 
-body {
-    display: grid;
-    height: 100vh;
-    margin: 0;
-    font-family: Helvetica;
-  }
+ul{
+    display: flex;
+    flex-direction: row; /* default */
+    justify-content: flex-start; /* default */
+    height: 50px;
+   
+   
 
-
-
-
+}
+a{
+    fomt-color: pink;
+    font-size: 50px;
+    padding: 40px;
+    margin-right: 30px;
+    font-family: 'Fredoka One', cursive;
+   
+}
 
 
 h2 {
-    font-family: 'Marck Script', cursive;
+    font-family: 'Fredoka One', cursive;
     font-size: 50px;
 }
+h3{
+    background:none;
+    font-family: 'Fredoka One', cursive;
+}
 
-
+h1{
+    background: none;
+    font-family: 'Fredoka One', cursive;
+   
+    font-size: 50px;
+}
+p{
+    background: none;
+}
+form{
+    background: none;
+}

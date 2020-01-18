@@ -4,24 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/rooms.css">
   <title>Foodzie Room</title>
+  <li><a href="/">Home</a></li>
+ 
+  <li><a href="/rooms/">Recipe Room</a></li> 
+
 </head>
 <body>
   <!-- More html will go here -->
+ <div>
   <h2>Add a Recipe</h2>
 <form action="/rooms" method="POST">
-  <label>Title:
+  <p><label>Title:
    <input type="text" name="title">
   </label>
+  </p>
+<p>
   <label>Photo URL:
-    <input type="text" name="photoURL">
+    <input type="text" name="photoURL" >
   </label>
+</p>
+<p>
   <label>Recipe:
     <input type="text" name="recipe">
+  
   </label>
-  <button>Submit</button>
+</p>
+ <p> <button>Submit</button>
+</p>
 </form>
+</div>
 </body>
 </html>
 
