@@ -9,11 +9,13 @@ const recipesRouter = require('./routes/recipes');
 const commentsRouter = require('./routes/comments');
 const methodOverride = require('method-override');
 
-const app = express();
+
+
 require('dotenv').config();
 require('./config/database');
 require('./config/passport');
 
+const app = express();
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));

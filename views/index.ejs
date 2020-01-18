@@ -5,29 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="/css/style.css">
-
+  <!DOCTYPE html>
+  <html>
+  
+  <head>
+    
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
-    <!-- Materialize Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Materialize CSS Framework -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Marck Script&display=swap" rel="stylesheet">
+   <!-- Materialize Icons -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- Materialize CSS Framework -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <link rel="stylesheet" href="/css/style.css" />
     <!-- JavaScript for Materialize -->
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
- 
-
-
-
-   
-    <div class="navbar-fixed"></div>
+  </head>
       <nav>
- 
-
-         <div class="brand-logo center">FOODZIES</div> 
-          
-          <ul class="left">
+          <ul class="">
             <li><a href="/">Home</a></li>
             <% if (user) {%>
             <li><a href="/rooms/">Recipe Room</a></li> 
@@ -35,25 +29,28 @@
             <li><a href="/rooms/new">Add New Recipe</a></li> 
             <% } %>
             <!-- Place Login UI Here -->
+      <li>
+    <% if (user){ %>
+         <a href="/logout"><i class="material-icons left"></i>Log Out</a>
+         <h2>Hey Foodie !</h2>  
+         
+           
       
-   
-                
-                      <li>
-                     <% if (user){ %>
-                          <a href="/logout"><i class="material-icons left">trending_flat</i>Log Out</a>
-                          <h2>YEP</h2>
-                          <% } else {%>
-                          <a href="/auth/google"><i class="material-icons left">vpn_key</i>Login with Google</a>
-                          <h2>NOPE</h2>
-                         <% } %>
-                      </li>    
-                      
-
-</head>
-</nav>
+             </div>
+            <% } else {%>
+            <a href="/auth/google"><i class="material-icons left"></i>Login with Google</a>
+         
+        <% } %>
+                 </li>    
+     
+    </div>
+  </nav>
+</head> 
 <body>
- 
-  <p>Welcome Food Lover!</p>
-  <p> The App Where you can share your love for food with friends</p>
+  
+  <h1>FOODZIES</h1>
 
+        <p>Welcome Food Lover!</p>
+
+</body>
 </html>

@@ -3,8 +3,12 @@ const Room = require('../models/room');
 
 
 module.exports = {
-    create
-};
+    create,
+   
+}
+
+
+
 
 function create(req, res) {
     Room.findById(req.params.id, function(err, room){
